@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    background: #000;  /* fallback for old browsers */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header > img {
+    height: 65%;
+    margin-left: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+header > p {
+    font-family: 'Press Start 2P', cursive;
+    color: #00b800;
+    font-size: 27px;
+    margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.meme > img {
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.meme > h2 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme > .bottom {
+    bottom: 0;
+}
+
+.meme > .top {
+    top: 0;
+}
+
+.meme-form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.meme-form > input {
+    width: 45%;
+    height: 40px;
+    border-color: black;
+    border-width: 1.5px;
+    border-style: solid;
+    
+}
+
+.random-top-text-button {
+    position: relative;
+    left: 7px; 
+    margin: 5px 0;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    border-radius: 3px;
+    height: 38px;
+    width: 55%;
+    font-family: VT323, monospace;
+    font-size: 21.5px;
+    letter-spacing: 1.5px;
+    color: white;
+    background: #00b800;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.random-bottom-text-button {
+    position: relative;
+    left: 7px; 
+    margin: 5px 0;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    border-radius: 3px;
+    height: 38px;
+    width: 55%;
+    border: none;
+    font-family: VT323, monospace;
+    font-size: 21.5px;
+    letter-spacing: 1.3px;
+    color: white;
+    background: #00b800;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: VT323, monospace;
+    font-size: 20px;
+    text-align: cen
+    
+}
+.meme-form > input::-moz-placeholder { /* Firefox 19+ */
+    font-family: VT323, monospace;
+    font-size: 20px;
+    text-align: cen
+}
+.meme-form > input:-ms-input-placeholder { /* IE 10+ */
+    font-family: VT323, monospace;
+    font-size: 20px;
+    text-align: cen
+}
+.meme-form > input:-moz-placeholder { /* Firefox 18- */
+    font-family: VT323, monospace;
+    font-size: 20px;
+    text-align: cen
+}
+
+.generate-new-button {
+    position: relative;
+    left: 7px; 
+    margin: 5px 0;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    border-radius: 3px;
+    height: 38px;
+    width: 100%;
+    font-family: VT323, monospace;
+    font-size: 21.5px;
+    letter-spacing: 1.5px;
+    color: white;
+    background: #00b800;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+.save-button {
+    position: relative;
+    left: 10px; 
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    height: 38px;
+    width: 49%;
+    font-family: VT323, monospace;
+    font-size: 21.5px;
+    letter-spacing: 1.5px;
+    color: white;
+    background: #00b800;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+
+footer {
+    background: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+footer > p {
+    font-family: 'Press Start 2P', cursive;
+    color: #00b800;
+    font-size: 7px;
+    margin-left: 5%;
+    position: relative;
+    left: 10rem;
 }
