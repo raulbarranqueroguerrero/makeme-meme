@@ -191,7 +191,6 @@ footer {
     height: 50px;
     display: flex;
     align-items: center;
-    position: relative; 
 }
 
 footer > p {
@@ -200,5 +199,5 @@ footer > p {
     font-size: 7px;
     margin-left: 5%;
     position: relative;
-    left: 10rem;
+    left: 5rem;
 }
