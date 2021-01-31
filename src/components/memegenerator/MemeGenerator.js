@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import randomTextDataFile from './randomTextDataFile'
 
 function MemeGenerator() {
     const [text, setText] = useState({topText: '', bottomText: ''})
@@ -6,24 +7,26 @@ function MemeGenerator() {
     const [randomMeme, setRandomMeme] = useState('http://i.imgflip.com/1bij.jpg')
     const [randomTopText, setRandomTopText] = useState('')
     const [randomBottomText, setRandomBottomText] = useState('')
-
-    const randomTextData = {
-        "0": "Kawabunga!",
-        "1": "Andaleee",
-        "2": "Bingo"
-    }
-
-    const values = Object.values(randomTextData)
-    const randomTextValue = values[parseInt(Math.random()* values.length)]
+    
+    
 
     function handleTopText(event) {
         event.preventDefault()
+        const values = Object.values(randomTextDataFile)
+        const randomTextValue = values[parseInt(Math.random()* values.length)]
         setRandomTopText(randomTextValue)
+
     }
     function handleBottomText(event) {
         event.preventDefault()
+        const values = Object.values(randomTextDataFile)
+        const randomTextValue = values[parseInt(Math.random()* values.length)]
         setRandomBottomText(randomTextValue)
     }
+    useEffect(() => {
+        setRandomTopText('')
+        setRandomBottomText('')
+    }, [])
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
