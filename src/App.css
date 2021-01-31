@@ -92,9 +92,9 @@ header > p {
     left: 7px; 
     margin: 5px 0;
     padding-bottom: 5px;
-    padding-top: 4px;
+    padding-top: 1px;
     border-radius: 3px;
-    height: 38px;
+    height: 39px;
     width: 55%;
     font-family: VT323, monospace;
     font-size: 21.5px;
@@ -111,9 +111,9 @@ header > p {
     left: 7px; 
     margin: 5px 0;
     padding-bottom: 5px;
-    padding-top: 4px;
+    padding-top: 1px;
     border-radius: 3px;
-    height: 38px;
+    height: 39px;
     width: 55%;
     border: none;
     font-family: VT323, monospace;
