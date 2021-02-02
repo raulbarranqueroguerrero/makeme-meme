@@ -15,7 +15,7 @@ function MemeGenerator() {
         setRandomText('')
     }
 
-    function handleChange(event) {
+    function handleInput(event) {
         const {name, value} = event.target
         setText(prevText => ({
             ...prevText,
@@ -52,7 +52,7 @@ function MemeGenerator() {
                     name='topText'
                     placeholder='Top Text'
                     value={text.topText}
-                    onChange={handleChange}
+                    onChange={handleInput}
                 />
                 <button name='top' className='random-top-text-button' onClick={handleRandomText}>Random</button>
                 <br/>
@@ -62,7 +62,7 @@ function MemeGenerator() {
                     name='bottomText'
                     placeholder='Bottom Text'
                     value={text.bottomText}
-                    onChange={handleChange}
+                    onChange={handleInput}
                 />
                 <button name='bottom' className='random-bottom-text-button' onClick={handleRandomText}>Random</button>
                 
