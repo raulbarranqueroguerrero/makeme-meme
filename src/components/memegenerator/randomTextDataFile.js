@@ -32,8 +32,6 @@ const randomTextDataFile = {
         30: "Beat it",
         31: "Monday",
         32: "Tuesday",
-        31: "Wednesday",
-        32: "Thursday",
         33: "Friday",
         34: "Saturday",
         35: "Sunday",
