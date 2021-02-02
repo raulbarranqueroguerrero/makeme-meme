@@ -156,7 +156,7 @@ header > p {
     padding-top: 4px;
     border-radius: 3px;
     height: 38px;
-    width: 100%;
+    width: 50%;
     font-family: VT323, monospace;
     font-size: 21.5px;
     letter-spacing: 1.5px;
@@ -166,14 +166,18 @@ header > p {
     border-width: 3px;
     border-style: solid;
 }
-.save-button {
+
+.git-button {
+    display: inline-block;
+    text-align: center;
     position: relative;
-    left: 10px; 
+    left: 15px;
     margin: 5px 0;
     padding-bottom: 5px;
+    padding-top: 4px;
     border-radius: 3px;
     height: 38px;
-    width: 49%;
+    width: 50%;
     font-family: VT323, monospace;
     font-size: 21.5px;
     letter-spacing: 1.5px;
@@ -183,8 +187,6 @@ header > p {
     border-width: 3px;
     border-style: solid;
 }
-
-
 
 footer {
     background: black;

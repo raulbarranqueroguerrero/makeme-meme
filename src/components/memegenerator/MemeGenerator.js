@@ -7,25 +7,25 @@ function MemeGenerator() {
     const [randomMeme, setRandomMeme] = useState('http://i.imgflip.com/1bij.jpg')
     const [randomText, setRandomText] = useState({top: '', bottom: ''})    
     
-    function generateRandomMeme(event) {
-        event.preventDefault()
+    function generateRandomMeme(e) {
+        e.preventDefault()
         const randomNum = Math.floor(Math.random() * allMemes.length)
         setRandomMeme(allMemes[randomNum].url)
         setText({topText: '', bottomText: ''})
         setRandomText('')
     }
 
-    function handleInput(event) {
-        const {name, value} = event.target
+    function handleInput(e) {
+        const {name, value} = e.target
         setText(prevText => ({
             ...prevText,
             [name]: value
         }))
     }
 
-    function handleRandomText(event) {
-        event.preventDefault()
-        const {name} = event.target
+    function handleRandomText(e) {
+        e.preventDefault()
+        const {name} = e.target
         const values = Object.values(randomTextDataFile)
         const randomTextValue = values[parseInt(Math.random()* values.length)]
         setRandomText(prevText => ({...prevText, [name]: randomTextValue}))
@@ -72,7 +72,14 @@ function MemeGenerator() {
                     <h2 className='bottom'>{text.bottomText.length > 0 ? text.bottomText : randomText.bottom}</h2>
                 </div>
                 
-                <button className='generate-new-button'onClick={generateRandomMeme}>Generate New Meme</button>
+                <button className='generate-new-button'onClick={generateRandomMeme}>Generate</button>
+                <a
+                    className='git-button'
+                    href='https://github.com/raulbarranqueroguerrero/makeme-meme'
+                    target="_blank"
+                    rel='noreferrer'
+                >Git
+                </a>
             </form>
         </div>
     )
