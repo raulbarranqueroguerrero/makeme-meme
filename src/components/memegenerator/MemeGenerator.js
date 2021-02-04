@@ -14,7 +14,7 @@ function MemeGenerator() {
         setText({topText: '', bottomText: ''})
         setRandomText('')
     }
-
+    
     function handleInput(e) {
         const {name, value} = e.target
         setText(prevText => ({
@@ -22,7 +22,7 @@ function MemeGenerator() {
             [name]: value
         }))
     }
-
+    
     function handleRandomText(e) {
         e.preventDefault()
         const {name} = e.target
@@ -30,16 +30,16 @@ function MemeGenerator() {
         const randomTextValue = values[parseInt(Math.random()* values.length)]
         setRandomText(prevText => ({...prevText, [name]: randomTextValue}))
     }
-
+    
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
-            .then(res => res.json())
-            .then(res => {
-                const {memes} = res.data
-                setAllMemes(memes)
-            })
+        .then(res => res.json())
+        .then(res => {
+            const {memes} = res.data
+            setAllMemes(memes)
+        })
     }, [])
-
+    
     useEffect(() => {
         setRandomText('')
     }, [])

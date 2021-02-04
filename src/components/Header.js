@@ -3,7 +3,7 @@ import Trollface from '../Trollface.png'
 
 function Header() {
     return (
-        <header>
+        <header className='header'>
              <img src={Trollface} alt='Problem?'/>
             <p>Makeme Meme</p>
         </header>
