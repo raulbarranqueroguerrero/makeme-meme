@@ -102,8 +102,9 @@ header {
 }
 
 .meme-form > input {
-    width: 0 auto;
+    width: 62%;
     height: 40px;
+    margin-right: 2%;
     border-color: black;
     border-width: 1.5px;
     border-style: solid;
