@@ -47,25 +47,40 @@ function MemeGenerator() {
     return (
         <div>
             <form className='meme-form'>
-                <input
-                    type='text'
-                    name='topText'
-                    placeholder='Insert Top Text'
-                    value={text.topText}
-                    onChange={handleInput}
-                />
-                <button name='top' className='random-top-text-button' onClick={handleRandomText}>Random</button>
-                <br/>
-
-                <input
-                    type='text'
-                    name='bottomText'
-                    placeholder='Insert Bottom Text'
-                    value={text.bottomText}
-                    onChange={handleInput}
-                />
-                <button name='bottom' className='random-bottom-text-button' onClick={handleRandomText}>Random</button>
-                
+                <div className='top-text'>
+                    <input
+                        type='text'
+                        name='topText'
+                        placeholder='Insert Top Text'
+                        value={text.topText}
+                        onChange={handleInput}
+                        className='input'
+                    />
+                    <button 
+                        name='top' 
+                        className='random-text' 
+                        onClick={handleRandomText}
+                    >
+                        Random
+                    </button>
+                </div>
+                <div className='bottom-text'>
+                    <input
+                        type='text'
+                        name='bottomText'
+                        placeholder='Insert Bottom Text'
+                        value={text.bottomText}
+                        onChange={handleInput}
+                        className='input'
+                    />
+                    <button 
+                        name='bottom'
+                        className='random-text' 
+                        onClick={handleRandomText}
+                    >
+                        Random
+                    </button>
+                </div>
                 <div className='meme'>
                     <img src={randomMeme} alt='Random Meme' />
                     <h2 className='top'>{text.topText.length > 0 ? text.topText : randomText.top}</h2>
