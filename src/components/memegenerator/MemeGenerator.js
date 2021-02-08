@@ -50,7 +50,7 @@ function MemeGenerator() {
                 <input
                     type='text'
                     name='topText'
-                    placeholder='Top Text'
+                    placeholder='Insert Top Text'
                     value={text.topText}
                     onChange={handleInput}
                 />
@@ -60,7 +60,7 @@ function MemeGenerator() {
                 <input
                     type='text'
                     name='bottomText'
-                    placeholder='Bottom Text'
+                    placeholder='Insert Bottom Text'
                     value={text.bottomText}
                     onChange={handleInput}
                 />
