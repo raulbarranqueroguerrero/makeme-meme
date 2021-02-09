@@ -4,8 +4,9 @@ import randomTextDataFile from './randomTextDataFile'
 function MemeGenerator() {
     const [text, setText] = useState({topText: '', bottomText: ''})
     const [allMemes, setAllMemes] = useState([])
-    const [randomMeme, setRandomMeme] = useState('http://i.imgflip.com/1bij.jpg')
-    const [randomText, setRandomText] = useState({top: '', bottom: ''})    
+    const [randomMeme, setRandomMeme] = useState('https://i.imgflip.com/8p0a.jpg')
+    const [randomText, setRandomText] = useState({top: '', bottom: ''})
+    console.log(randomMeme) 
     
     function generateRandomMeme(e) {
         e.preventDefault()
@@ -47,39 +48,56 @@ function MemeGenerator() {
     return (
         <div>
             <form className='meme-form'>
-                <input
-                    type='text'
-                    name='topText'
-                    placeholder='Top Text'
-                    value={text.topText}
-                    onChange={handleInput}
-                />
-                <button name='top' className='random-top-text-button' onClick={handleRandomText}>Random</button>
-                <br/>
-
-                <input
-                    type='text'
-                    name='bottomText'
-                    placeholder='Bottom Text'
-                    value={text.bottomText}
-                    onChange={handleInput}
-                />
-                <button name='bottom' className='random-bottom-text-button' onClick={handleRandomText}>Random</button>
-                
+                <div className='top-text'>
+                    <input
+                        type='text'
+                        name='topText'
+                        placeholder='Insert Top Text'
+                        value={text.topText}
+                        onChange={handleInput}
+                        className='input'
+                    />
+                    <button 
+                        name='top' 
+                        className='random-text' 
+                        onClick={handleRandomText}
+                    >
+                        Random
+                    </button>
+                </div>
+                <div className='bottom-text'>
+                    <input
+                        type='text'
+                        name='bottomText'
+                        placeholder='Insert Bottom Text'
+                        value={text.bottomText}
+                        onChange={handleInput}
+                        className='input'
+                    />
+                    <button 
+                        name='bottom'
+                        className='random-text' 
+                        onClick={handleRandomText}
+                    >
+                        Random
+                    </button>
+                </div>
                 <div className='meme'>
                     <img src={randomMeme} alt='Random Meme' />
                     <h2 className='top'>{text.topText.length > 0 ? text.topText : randomText.top}</h2>
                     <h2 className='bottom'>{text.bottomText.length > 0 ? text.bottomText : randomText.bottom}</h2>
                 </div>
-                
-                <button className='generate-new-button'onClick={generateRandomMeme}>Generate</button>
-                <a
-                    className='git-button'
-                    href='https://github.com/raulbarranqueroguerrero/makeme-meme'
-                    target="_blank"
-                    rel='noreferrer'
-                >Git
-                </a>
+                <div className='bottom-buttons'>
+                    <button className='generate-new'onClick={generateRandomMeme}>New</button>
+                    <a
+                        className='git-button'
+                        href='https://github.com/raulbarranqueroguerrero/makeme-meme'
+                        target="_blank"
+                        rel='noreferrer'
+                    >
+                        Git
+                    </a>
+                </div>
             </form>
         </div>
     )
