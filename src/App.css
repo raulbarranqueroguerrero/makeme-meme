@@ -58,8 +58,8 @@ header {
 
 @media (orientation: portrait) {
     .meme > img {
-        min-height: 480px;
-        max-height: 485px;
+        min-height: 440px;
+        max-height: 450px;
     }
 }
 
