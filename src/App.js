@@ -5,7 +5,7 @@ import MemeGenerator from './components/memegenerator/MemeGenerator'
 
 function App() {
   return (
-    <div>
+    <div className='viewport'>
       <Header/>
       <MemeGenerator/>
       <Footer/>
