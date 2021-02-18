@@ -99,7 +99,7 @@ header {
 .bottom-text {
     display: flex;
     margin-top: .3rem;
-    padding-bottom: .5rem;
+    padding-bottom: .8rem;
 
 }
 
@@ -137,7 +137,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: .1rem;
+    margin-top: .4rem;
     margin-bottom: 0;
 }
 
@@ -184,7 +184,7 @@ header {
 
 footer {
     background: black;
-    height: 45px;
+    height: 53px;
     display: flex;
     padding-top: 0;
     border-radius: 5px;
@@ -194,7 +194,7 @@ footer {
 footer > p {
     font-family: 'Press Start 2P', cursive;
     color: #00b800;
-    font-size: .3rem;
+    font-size: .4rem;
     margin: auto;
     border: 2px solid #008A8A;
     padding: 4px;

@@ -26,6 +26,7 @@ function MemeGenerator() {
     
     function handleRandomText(e) {
         e.preventDefault()
+        setText({topText: '', bottomText: ''})
         const {name} = e.target
         const values = Object.values(randomTextDataFile)
         const randomTextValue = values[parseInt(Math.random()* values.length)]
