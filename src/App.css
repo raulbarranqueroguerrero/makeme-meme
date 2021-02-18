@@ -3,12 +3,6 @@ html,body {
     width: 0 auto;
 }
 
-.viewport {
-    min-height: 100vh;
-    max-height: 100vh;
-    height: 100%;
-}
-
 header {
     width: 100%;
     height: 110px;
