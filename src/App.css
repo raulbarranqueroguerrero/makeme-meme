@@ -10,12 +10,18 @@ header {
     display: flex;
     align-items: center;
     background: #000;
-
 }
+
 
 .header > img {
     height: 65%;
     margin-left: 4rem;
+}
+
+@media (orientation: portrait) {
+    .header > img {
+        margin-left: 1.5rem;
+    }
 }
 
 .header > p {
@@ -24,6 +30,7 @@ header {
     font-size: 2rem;
     padding-left: 2rem;
 }
+
 
 .meme {
     width: 100%;
@@ -43,7 +50,7 @@ header {
 @media (min-width: 600px) {
     .meme > img {
         min-height: 315px;
-        max-height: 350px;
+        max-height: 340px;
         max-width: 350px;
         min-width: 340px;
     }
@@ -78,6 +85,14 @@ header {
     0 -2px 0 #000,
     -2px 0 0 #000,
     2px 2px 5px #000;
+}
+
+@media (orientation: portrait) {
+    .meme > h2 {
+        min-width: 82%;
+        font-size: 1.5rem;
+        margin-bottom: 7rem;
+    }
 }
 
 .meme > .bottom {
