@@ -15,7 +15,7 @@ header {
 
 .header > img {
     height: 70%;
-    margin-left: 25rem;
+    margin-left: 15rem;
 }
 
 @media (orientation: portrait) {
@@ -50,8 +50,8 @@ header {
 
 @media (min-width: 600px) {
     .meme > img {
-        min-height: 340px;
-        max-height: 341px;
+        min-height: 369px;
+        max-height: 370px;
         max-width: 350px;
         min-width: 340px;
     }
