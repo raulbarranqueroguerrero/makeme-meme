@@ -199,11 +199,17 @@ header {
 
 footer {
     background: black;
-    height: 53px;
+    height: 62px;
     display: flex;
     padding-top: 0;
     border-radius: 5px;
     border: 5 px double #008A8A;
+}
+
+@media (orientation: portrait) {
+    footer {
+        height: 50px;
+    }
 }
 
 footer > p {
@@ -214,6 +220,12 @@ footer > p {
     border: 2px solid #008A8A;
     padding: 4px;
     border-radius: 3px;
+}
+
+@media (orientation: portrait) {
+    footer > p {
+        font-size: .3rem;
+    }
 }
 
 .meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
