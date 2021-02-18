@@ -58,13 +58,13 @@ header {
 .meme > h2 {
     position: absolute;
     text-align: center;
-    max-width: 50%;
+    max-width: 30%;
     left: 50%;
     margin-top: 13rem;
     margin-bottom: 9rem;
     transform: translateX(-50%);
     font-family: impact, sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -89,23 +89,18 @@ header {
 }
 
 .meme-form {
-    width: 97%;
     padding: .7rem;
 }
 
 .top-text {
     display: flex;
-    width: 99%;
-    margin-left: .5px;
 }
 
 .bottom-text {
     display: flex;
-    width: 99%;
-    justify-content: space-around;
     margin-top: .3rem;
-    margin-bottom: .5rem;
-    margin-right: .5rem;
+    padding-bottom: .5rem;
+
 }
 
 .input {
@@ -123,7 +118,7 @@ header {
 
 
 .random-text {
-    width: 35%;
+    width: 35.5%;
     border-radius: 3px;
     font-family: VT323, monospace;
     font-size: 19px;
