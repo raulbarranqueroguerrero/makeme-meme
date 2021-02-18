@@ -170,7 +170,7 @@ header {
     border: 3px solid black;
 }
 
-.generate-new:hover 
+.generate-new:hover,
 .generate-new:focus {
     opacity: .9;
     background-color: #008A8A;
@@ -215,10 +215,13 @@ footer {
 footer > p {
     font-family: 'Press Start 2P', cursive;
     color: #00b800;
-    font-size: .4rem;
+    font-size: .3rem;
     margin: auto;
-    border: 2px solid #008A8A;
-    padding: 4px;
+    border: 1px solid #008A8A;
+    border-radius: 10px;
+    padding: 1.5em;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 @media (orientation: portrait) {
