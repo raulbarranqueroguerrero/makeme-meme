@@ -208,7 +208,7 @@ footer {
 
 @media (orientation: portrait) {
     footer {
-        height: 50px;
+        height: 45px;
     }
 }
 
@@ -224,7 +224,7 @@ footer > p {
 
 @media (orientation: portrait) {
     footer > p {
-        font-size: .3rem;
+        font-size: .2rem;
     }
 }
 
