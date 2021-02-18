@@ -56,9 +56,10 @@ header {
     }
 }
 
-@media (max-width: 200px) {
+@media (orientation: portrait) {
     .meme > img {
-        min-height: 485px;
+        min-height: 480px;
+        max-height: 485px;
     }
 }
 
