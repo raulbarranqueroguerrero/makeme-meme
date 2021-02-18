@@ -203,7 +203,6 @@ footer {
     height: 62px;
     display: flex;
     padding-top: 0;
-    border-radius: 5px;
     border: 5 px double #008A8A;
 }
 
@@ -220,13 +219,12 @@ footer > p {
     margin: auto;
     border: 2px solid #008A8A;
     padding: 4px;
-    border-radius: 3px;
 }
 
 @media (orientation: portrait) {
     footer > p {
         font-size: .1rem;
-        border: 1px solid #008A8A;
+        border: none;
         padding: .2rem;
     }
 }
